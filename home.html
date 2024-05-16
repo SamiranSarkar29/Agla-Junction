@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        h2 {text-align: center;}
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  .sampleMarquee {
+			color: #7b767f;
+			background-color: #d9d8df;
+			font-size: 34px;
+			line-height: 70px;
+			padding: 15px;
+		}
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {background-color: #04AA6D;}
+.navbar {
+  position: fixed; 
+  top: 0; 
+  right: 0;
+  width: 100%;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+#testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+}
+.testimonial-heading{
+  letter-spacing: 1px;
+  margin: 30px 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-heading span{
+  font-size: 1.3rem;
+  color: #252525;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.testimonial-box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:100%;
+}
+.testimonial-box{
+  width:500px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.profile-img{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.name-user{
+  display: flex;
+  flex-direction: column;
+}
+.name-user strong{
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.name-user span{
+  color: #979797;
+  font-size: 0.8rem;
+}
+.reviews{
+  color: #f9d71c;
+}
+.box-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.client-comment p{
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.testimonial-box:hover{
+  transform: translateY(-10px);
+  transition: all ease 0.3s;
+}
+
+@media(max-width:1060px){
+  .testimonial-box{
+      width:45%;
+      padding: 10px;
+  }
+}
+@media(max-width:790px){
+  .testimonial-box{
+      width:100%;
+  }
+  .testimonial-heading h1{
+      font-size: 1.4rem;
+  }
+}
+@media(max-width:340px){
+  .box-top{
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+  }
+  .reviews{
+      margin-top: 10px;
+  }
+}
+::selection{
+  color: #ffffff;
+  background-color: #252525;
+  padding: 50px;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 2px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Upgrade to premium popup */
+/* start */
+
+.popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .close-btn {
+            position: absolute;
+            top: 300px;
+            right: 540px;
+            cursor: pointer;
+        }
+    /* end  */
+
+    section {
+            padding: 5px 0;
+            text-align: center;
+            min-height: 5vh;
+        }
+        section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+        .kkr h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.kkr {
+    padding: 40px;
+    background-color: rgb(17, 124, 143);
+}
+
+/* Top 5 wala container */
+/* start */
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* end */
+
+/* Cookie Popup container Start*/
+.cookie-popup {
+            position: fixed;
+            bottom: 0;
+            left: 0; 
+            /* right: 2; */
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 12px 0px;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+        /* Button styles */
+        .cookie-btn {
+            display: inline-block;
+            padding: 8px 20px;
+            margin: 0 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cookie-btn:hover {
+            background-color: #0056b3;
+        }
+        /* end */
+
+        /* Section Counter Start */
+        * {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa {font-size:40px;}
+.fab {font-size:40px;}
+/* End */
+
+
+/* Agla Junction Searching Code
+    Start */
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  select {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #f9f9f9;
+  }
+  .search-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .search-btn:hover {
+    background-color: #45a049;
+  }
+  #searchResults {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #searchResults p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+    /* End */
+.top-color {
+  background-color: #4B0082; /* Dark violet color */
+            /* Gradient */
+  background-image: linear-gradient(to bottom right, #4B0082, #000000); 
+}
+.scroll-text {
+  background-color: bisque;
+}
+.image_galleries {
+  background-color:#ccc
+}
+.video {
+  background-color: #4B0082; /* Dark violet color */
+            /* Gradient */
+  background-image: linear-gradient(to bottom right, #4B0082, #000000);
+}
+.search {
+  background-color:#ccc
+}
+.search-container {
+  background-color:cadetblue 
+}
+.yellow {
+  background-color: lemonchiffon;
+}
+.grey {
+  background-color: gainsboro;
+}
+
+
+/* Contact us css */
+/* start */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.abcd{
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.abcd h2{
+  color: white;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-container p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-container a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
+/* end */
+    </style>
+    <title>Agla Junction</title>
+    <link rel="icon" type="image/x-icon" href="Image/No More Bore, Time To Explore-modified.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="cokkie_setting" href="cookie_setting.css">
+    <!-- <link rel="contact-us" href="contact_us.css"> -->
+</head>
+<body>
+  <div class="top-color">
+    <div class="navbar">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#section1" onclick="scrollToSection('section1')">Partner's Site</a>
+        <a href="#section2" onclick="scrollToSection('section2')">About Us</a>
+        <a href="#section3" onclick="scrollToSection('section3')">Reviews</a>
+        <a href="#section4" onclick="scrollToSection('section4')">Founder</a>
+        <a href="login.html" target="_blank">Login/Signup</a>
+        <a href="#" onclick="openPopup1()">Upgrade to Premium</a>
+    </nav>
+    </div>
+    <br>
+    <br>
+    <img src="Image/canva2.png" style="width: 300px; height: 300px; border-radius: 300px;">
+    </div>
+    <!-- Cookie Popup -->
+    <div class="cookie-popup" id="cookie-popup">
+      <p>We use our own and third-party cookies to provide you with a great online experience. We also use these cookies to improve our products and services, support our marketing campaigns, and advertise to you on our website and 
+          other websites. Some cookies may continue to collect information after you have left our website.</p>
+      <button class="cookie-btn" onclick="allowAllCookies()">Allow all cookies</button>
+      <button class="cookie-btn" onclick="openCookieSettings()">Cookie settings</button>
+      
+  </div>
+  
+
+<main>
+        <div class="main">
+        
+          <div class="scroll-text">
+            <marquee class="sampleMarquee" direction="left" scrollamount="7" behavior="scroll"><h2>Top 4 Most Recently Visited Places In India</h2></marquee>
+          </div>  
+            
+          <!--Top image gallaery, Start-->
+          
+          <!-- <fieldset> -->
+            <div class="image_galleries">
+            <div class="image_gallery1">
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="kamakhya.html">
+                    <img src="Image/Kamakhya Mandir.jpg" alt="Kamakhya Temple Image">
+                  </a>
+                  <div class="desc">Kamakhya Temple 
+                    <br>
+                    (Guwahati, Assam)
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="image_gallery2">
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="ajanta.html">
+                    <img src="Image/Ajanta Ellora Caves.jpg" alt="Ajanta Caves Images">
+                  </a>
+                  <div class="desc">Ajanta Ellora Caves 
+                    <br>
+                    (Aurangabad, Maharashtra)
+                  </div>
+                </div>
+              </div>
+              </div>
+              
+              <div class="image_gallery3">
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="bandhavgarh.html">
+                    <img src="Image/Bandhavgarh National Park.jpg" alt="Bandhavgarh National Park Images">
+                  </a>
+                  <div class="desc">Bandhavgarh National Park 
+                    <br>
+                    (Umaria, Madhya Pradesh)
+                  </div>
+                </div>
+              </div>
+              </div>
+
+              <div class="image_gallery4">
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="darjeeling.html">
+                    <img src="Image/Darjeeling.jpg" alt="Darjeeling Images">
+                  </a>
+                  <div class="desc">Darjeeling 
+                    <br>
+                    (Eastern Himalays, West Bengal)
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="clearfix"></div>
+              <!-- end -->
+            <!-- </fieldset> -->
+          </div>
+          <br>
+        <div class="video">
+        <video src="Video/Aman Kumar, 2nd year, IT.mp4" controls muted poster="Image/HOW TO.png" width="550" height="300"></video>
+        </div>
+        <br>
+        <div class="search">
+        <center><h1>Travel Is Not A Luxury</h1></center> 
+        <center><h1>It Is Necessary</h1></center> 
+        <center><h1>|</h1></center> 
+        <center><h1>|</h1></center> 
+        <center><h1>&darr;</h1></center> 
+         
+<!--Agla Junction Searching Code-->
+    <!--Start-->
+    
+      <div class="container">
+        <div class="search-container">
+        <h1>Choose Your Agla Junction</h1>
+        <br>
+        <form id="destinationForm">
+          <label for="country">Choose Country:</label>
+          <select id="country" required>
+            <option value="">Select</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+            <option value="england">England</option>
+            <option value="uk">UK</option>
+            <option value="japan">Japan</option>
+            <option value="south africa">South Africa</option>
+            <option value="russia">Russia</option>
+            <option value="natherland">Natherland</option>
+            <option value="srilanka">Srilanka</option>
+          </select>
+          
+          <label for="interest">Choose Your Interest:</label>
+          <select id="interest" required>
+            <option value="">Select</option>
+            <option value="devoted">Devoted Places</option>
+            <option value="hill">Hill Stations</option>
+            <option value="historical">Historical Places</option>
+            <option value="haunted">Haunted Places</option>
+            <option value="beaches">Beaches</option>
+          </select>
+          <label for="state">Choose a State:</label>
+          <select id="state" required>
+            <option value="">Select</option>
+            <option value="andhra pradesh">Andhra Pradesh</option>
+            <option value="bihar">Bihar</option>
+            <option value="chhattisgarh">Chhattisgarh</option>
+            <option value="goa">Goa</option>
+            <option value="haryana">Haryana</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="madhya pradesh">Madhya Pradesh</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="west bengal">West Bengal</option>
+          </select>
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+      </div>
+      </div>
+      <br>
+      </div>
+    </div>
+  </div>
+  
+      <script>
+        const form = document.getElementById('destinationForm');
+      
+        form.addEventListener('submit', function(event){
+          event.preventDefault();
+          const country = document.getElementById('country').value;
+          const interest = document.getElementById('interest').value;
+          const state = document.getElementById('state').value;
+      
+          // Show pop-up message
+          const message = `Searching for ${interest} places in ${country}${state ? ', ' + state : ''}...`;
+          alert(message);
+      
+          // Redirect to the appropriate page based on user input
+          let url = '';
+          if (country && interest) {
+            if (country === 'india') {
+              if (interest === 'historical' && state === 'west bengal') {
+                url = 'wb_historical.html';
+              } else if (interest === 'devoted' && state === 'west bengal') {
+                url = 'wb_devoted.html';
+              }//  else if (interest === 'beaches' && state === 'rajasthan') {
+              //   url = 'india-beach-rajasthan.html';
+              // }
+            } else if (country === 'usa') {
+              // Define URLs for other countries and combinations as needed
+            }
+          }
+      
+          // Redirect to the constructed URL
+          if (url) {
+            window.location.href = url;
+          }
+        }
+      );
+      </script>
+      <!--End-->
+<br>
+     <div class="yellow"> 
+    <div id="section1" class="section">
+    <h2>Our Partner</h2>
+    <div class="row"> 
+        <div class="column">
+            <a href="https://www.makemytrip.com/flights/?cmp=SEM|D|DF|B|Brand|Brand-BrandExact_DT|B_M_Makemytrip_Search_Exact|RSA|&s_kwcid=AL!1631!3!!e!!o!!make%20my%20trip%20official%20website&ef_id=:G:s&msclkid=911b24ef11e41b953fb842d4b3a5b572" target="_blank"><img src="Image/make_my_trip.png" width="150"></a>
+            <h5>Hotel Booking</h5>
+        </div>
+        <div class="column">
+            <a href="https://www.ixigo.com/flights?utm_source=bing&utm_medium=paid_search_bing&utm_campaign=Generic_Search_Desktop_Sept_Bing&utm_source=Bing&utm_medium=paid_search_Bing&utm_campaign=generic_search_sept_flights&msclkid=c1233a52e5ae11a26a1d5c6946dbfce7&utm_term=google%20flight%20ticket%20booking&utm_content=Flight%20Booking" target="_blank"><img src="Image/ixigo_png.jpg" width="100"></a>
+            <h5>Flight Booking</h5>
+        </div>
+        <div class="column">
+            <a href="https://www.irctc.co.in/nget/train-search" target="_blank"><img src="Image/irctc_png.jpg" width="180"></a>
+            <h5>Train Ticket Booking</h5>
+        </div>
+        <div class="column">
+            <a href="https://www.olacabs.com/" target="_blank"><img src="Image/ola_png.jpg" width="150"></a>
+            <h5>Cab Booking</h5>
+        </div>
+    </div>
+    </div>
+    </div>
+<br>
+
+
+    <div class="grey">
+    <div id="section2" class="section">
+    <h2>About Us</h2>
+
+       <p>Traveling is important because it's not just fun, it also helps us learn and grow. When we visit new places, we get to see different cultures, try new foods, and see beautiful landscapes. It makes us feel happy and less stressed.</p>
+
+        <p>Your website is a helpful tool for people who want to plan their next trip. They can pick what they're interested in, like beaches or historical sites, and choose which state they want to visit. Then, when they click search, they'll find a page with lots of details about that place.
+        
+        When someone picks where they want to go, your website does something awesome. It takes them to a page with all the details about that place. It tells them where they can stay, how they can get there, and even helps them book hotels, cars, flights, and tickets for stuff to do. This makes it easy for people to plan their trip and have a great time exploring new places. Your website makes it easy for everyone to have fun adventures and learn new things about the world.</p>     
+    </div>
+    </div>
+    <br>
+    
+        <div class="yellow">
+        <div id="section3" class="section">
+            <section id="testimonials">
+                <div class="testimonial-heading">
+                    <!-- <span>Reviews</span> -->
+                    <h2>Reviews</h2>
+                    <h4>Customer Says</h4>
+                </div>
+                <div class="testimonial-box-container">
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="Image/image_1.jpg"/>
+                                </div>
+                                <div class="name-user">
+                                    <strong>Andre Russell</strong>
+                                    <span>@dreruss</span>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <!-- <i class="far fa-star"></i> -->
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>"I stumbled upon this website while planning my vacation, and I'm so glad I did! The search feature made it easy to find exactly what I was looking for based on my interests and preferred destination. The detailed information provided about each spot, along with the booking options, saved me a lot of time and hassle. Thanks to this site, my trip was smooth sailing from start to finish!"</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="Image/image_2.jpg" />
+                                </div>
+                                <div class="name-user">
+                                    <strong>Rinku Singh</strong>
+                                    <span>@lordrinku</span>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>"What a fantastic resource for travelers! I love how user-friendly the website is, making it a breeze to navigate and find relevant information. The ability to customize my search based on my interests and location preferences was a game-changer. Plus, having all the booking options conveniently available in one place made planning my trip incredibly convenient. I'll definitely be using this site for all my future travel adventures!"</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="Image/image_5.jpg" />
+                                </div>
+                                <div class="name-user">
+                                    <strong>Shreyas Iyer</strong>
+                                    <span>@iyershreyas</span>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <!-- <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i> -->
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>"I can't say enough good things about this website! As someone who loves to travel but struggles with planning, this site has been a lifesaver. The search function helped me discover hidden gems that I wouldn't have found otherwise, and the detailed destination pages gave me all the information I needed to make informed decisions. Being able to book accommodations, transportation, and activities all in one place simplified the entire process. I highly recommend this site to anyone looking to make their next trip unforgettable!"</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="box-top">
+                            <div class="profile">
+                                <div class="profile-img">
+                                    <img src="Image/image_4.jpg" />
+                                </div>
+                                <div class="name-user">
+                                    <strong>Sunil Narine</strong>
+                                    <span>@narayan</span>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <!-- <i class="far fa-star"></i> -->
+                            </div>
+                        </div>
+                        <div class="client-comment">
+                            <p>"This website exceeded all my expectations! From the moment I landed on the homepage, I was impressed by the clean layout and intuitive design. The search feature made it easy to narrow down my options based on my interests and location preferences. Once I selected a destination, the wealth of information provided, coupled with the convenient booking links, made planning my trip a breeze. Thanks to this site, I was able to explore a new destination with ease and confidence. I'll definitely be returning for future travel planning needs!"</p>
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <script src='https://kit.fontawesome.com/c8e4d183c2.js'></script>   
+        
+        </div>
+        </div>
+        <br>
+        
+
+        <div class="grey">
+        <div id="section4" class="section">
+            <h2>Founder</h2>
+            <img src="Image/WhatsApp Image 2024-05-07 at 7.39.43 AM.jpeg" width="200">
+            <h3>Samiran Sarkar</h3>
+            <!-- <img src="Image/linkedin_png.jpg" width="20"> -->
+            <div class="row"> 
+                <div class="column">
+                    <a href="#" target="_blank"><img src="Image/linkedin_png.jpg" width="70"></a>
+                </div>
+                <div class="column">
+                    <a href="#" target="_blank"><img src="Image/youtube_png.jpg" width="50"></a>
+                </div>
+                <div class="column">
+                    <a href="#" target="_blank"><img src="Image/instagram_png.jpg" width="60"></a>
+                </div>
+                <div class="column">
+                    <a href="#" target="_blank"><img src="Image/facebook_png.jpg" width="50"></a>
+                </div>
+            </div>
+        <h3>3rd Year | Cyber Security | Haldia Institute Of Technology</h3>
+        <h5>Resilient, optimist and compassionate soul, committed to personal growth and spiritual development. Integrity-driven with a proactive approach to problem-solving. Believer in the enduring power of love and the importance of facing life's challenges with courage and perseverance. Approach each situation with openness, optimism and embracing life's twists with a smile. Strive to be a positive force, inspiring others on our shared journey of self-discovery and fulfillment.</h5>
+        </div>
+        </div>
+        <br>
+        
+
+    <!-- upgrade to premium popup
+    start -->
+    <div class="popup-overlay" id="popup1">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Coming Soon!</h2>
+            <p>Our Premium features are under development. Stay tuned!</p>
+        </div>
+    </div>
+    
+    <script>
+        function openPopup1() {
+            document.getElementById("popup1").style.display = "flex";
+        }
+    
+        function closePopup() {
+            document.getElementById("popup1").style.display = "none";
+        }
+    </script>
+    <!-- end      -->
+
+    <!-- scroll to perticular section, js code
+    start -->
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo({
+                    top: section.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+    <!-- end -->
+    </div>
+
+    <!--Section Counter Start-->
+    <div class="grey">
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <p><i class="fa fa-user"></i></p>
+          <h3>15+</h3>
+          <p>Partners</p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <p><i class="fa fa-eye"></i></p>
+          <h3>27k+</h3>
+          <p>Monthly Viewership</p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <p><i class="fab fa-diaspora"></i></p>
+          <h3>4.7</h3>
+          <p>Avg. Rating</p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <p><i class="fa fa-award"></i></p>
+          <h3>No. 2</h3>
+          <p>In This Category</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End -->
+
+    
+    </main>
+
+    
+
+  
+    <!--Cookie Pop Up-->
+  <script>
+      // Function to close the cookie popup
+      function closeCookiePopup() {
+          document.getElementById("cookie-popup").style.display = "none";
+      }
+
+      // Function to allow all cookies
+      function allowAllCookies() {
+          // You can add code here to set cookies accordingly
+          closeCookiePopup();
+      }
+
+      // Function to open cookie settings
+      function openCookieSettings() {
+          // You can redirect to a settings page or show a settings modal here
+          alert("Redirecting to cookie settings page...");
+      }
+    </script>
+    <!-- end -->
+    <br>
+
+    <!--Contact Us, start-->
+    <div class="abcd">
+    <div class="contact-container">
+      <h2>For Any Queries</h2>
+      <h3>Contact Us</h3>
+      <p>Phone: <a href="tel:+91 8116956101">+91 8116956101</a></p>
+      <p>Email: <a href="mailto:samiransarkarofficial@gmail.com">samiransarkarofficial@gmail.com</a></p>
+      <div class="social-media">
+          <a href="https://facebook.com" target="_blank">
+              <img src="Image/facebook_png.jpg" alt="Facebook">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+              <img src="Image/twitter.jpg" alt="Twitter">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+              <img src="Image/instagram_png.jpg" alt="Instagram">
+          </a>
+          <a href="https://linkedin.com" target="_blank">
+              <img src="Image/linkedin_png.jpg" alt="LinkedIn">
+          </a>
+      </div>
+  </div>
+  </div>
+      
+
+    <footer>
+        <a href="FAQs.html">FAQ</a>
+        <a href="terms_and_condition.html">Terms and Conditions</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="copyright_policy.html">&copy; 2024 | Agla Junction</a>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourist Destination Finder</title>
+<style>
+  /* CSS styles remain the same as before */
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Tourist Destination Finder</h1>
+  <form id="destinationForm">
+    <label for="country">Choose a Country:</label>
+    <select id="country" required>
+      <option value="">Select</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select>
+    <label for="interest">Choose Interest:</label>
+    <select id="interest" required>
+      <option value="">Select</option>
+      <option value="devoted">Devoted Places</option>
+      <option value="hill">Hill Stations</option>
+      <option value="historical">Historical Places</option>
+      <option value="haunted">Haunted Places</option>
+      <option value="beaches">Beaches</option>
+    </select>
+    <label for="state">Choose a State:</label>
+    <select id="state">
+      <option value="">Select</option>
+      <option value="rajasthan">Rajasthan</option>
+      <option value="kerala">Kerala</option>
+      <option value="california">California</option>
+    </select>
+    <button type="submit" class="search-btn">Search</button>
+  </form>
+  <div id="searchResults"></div>
+</div>
+<script>
+  const form = document.getElementById('destinationForm');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const country = document.getElementById('country').value;
+    const interest = document.getElementById('interest').value;
+    const state = document.getElementById('state').value;
+
+    // Construct URL based on selected options
+    let url = '';
+    if (country && interest) {
+      if (country === 'india') {
+        if (interest === 'hill' && state === 'rajasthan') {
+          url = 'india-hill-rajasthan.html';
+        } else if (interest === 'devoted' && state === 'rajasthan') {
+          url = 'india-devoted-rajasthan.html';
+        } else if (interest === 'beaches' && state === 'rajasthan') {
+          url = 'india-beach-rajasthan.html';
+        }
+      } else if (country === 'usa') {
+        // Define URLs for other countries and combinations as needed
+      }
+    }
+
+    // Redirect to the constructed URL
+    if (url) {
+      window.location.href = url;
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Section</title>
+    <style>
+        /* Style your navigation bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 5;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 5px;
+        }
+        nav ul li a {
+            color: #f9f5f5;
+            text-decoration: none;
+        }
+        /* Style your sections */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#section1" onclick="scrollToSection('section1')">Section 1</a></li>
+        <li><a href="#section2" onclick="scrollToSection('section2')">Section 2</a></li>
+        <li><a href="#section3" onclick="scrollToSection('section3')">Section 3</a></li>
+        <li><a href="#section4" onclick="scrollToSection('section4')">Section 4</a></li>
+        <li><a href="#section5" onclick="scrollToSection('section5')">Section 5</a></li>
+        <li><a href="#section6" onclick="scrollToSection('section6')">Section 6</a></li>
+        <li><a href="#section7" onclick="scrollToSection('section7')">Section 7</a></li>
+        <li><a href="#section8" onclick="scrollToSection('section8')">Section 8</a></li>
+        <li><a href="#section9" onclick="scrollToSection('section9')">Section 9</a></li>
+        <li><a href="#section10" onclick="scrollToSection('section10')">Section 10</a></li>
+    </ul>
+</nav>
+
+<section id="section1">
+    <h2>Section 1</h2>
+    <p>This is the content of Section 1.</p>
+</section>
+
+<section id="section2">
+    <h2>Section 2</h2>
+    <p>This is the content of Section 2.</p>
+</section>
+
+<section id="section3">
+    <h2>Section 3</h2>
+    <p>This is the content of Section 3.</p>
+</section>
+
+<section id="section4">
+    <h2>Section 4</h2>
+    <p>This is the content of Section 4.</p>
+</section>
+
+<section id="section5">
+    <h2>Section 5</h2>
+    <p>This is the content of Section 5.</p>
+</section>
+
+<section id="section6">
+    <h2>Section 6</h2>
+    <p>This is the content of Section 6.</p>
+</section>
+
+<section id="section7">
+    <h2>Section 7</h2>
+    <p>This is the content of Section 7.</p>
+</section>
+
+<section id="section8">
+    <h2>Section 8</h2>
+    <p>This is the content of Section 8.</p>
+</section>
+
+<section id="section9">
+    <h2>Section 9</h2>
+    <p>This is the content of Section 9.</p>
+</section>
+
+<section id="section10">
+    <h2>Section 10</h2>
+    <p>This is the content of Section 10.</p>
+</section>
+
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+</script>
+
+</body>
+</html>
